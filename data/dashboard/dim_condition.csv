@@ -1,0 +1,7 @@
+condition,condition_short,condition_type,sort_order
+Heart Failure,Heart Failure,Medical,1
+AMI (Heart Attack),Heart Attack,Medical,2
+Pneumonia,Pneumonia,Medical,3
+COPD,COPD,Medical,4
+CABG (Bypass Surgery),Bypass Surgery,Surgical,5
+Hip/Knee Replacement,Hip/Knee,Surgical,6

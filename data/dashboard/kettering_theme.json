@@ -1,0 +1,10 @@
+{
+  "name": "Readmissions Analysis",
+  "dataColors": ["#1F3A5F", "#2A9D8F", "#C8553D", "#E9A23B", "#8D99AE", "#5C7A99"],
+  "background": "#FFFFFF",
+  "foreground": "#2B2D42",
+  "tableAccent": "#1F3A5F",
+  "good": "#2A9D8F",
+  "neutral": "#E9A23B",
+  "bad": "#C8553D"
+}
