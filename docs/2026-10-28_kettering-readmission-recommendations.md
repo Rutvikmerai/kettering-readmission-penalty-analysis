@@ -1,8 +1,5 @@
 # Recommendation: Where Kettering Health Should Focus Readmission Reduction
 
-**To:** Kettering Health Quality and Population Health Leadership
-**Prepared by:** Rutvik Merai
-**Date:** October 28, 2026
 **Basis:** Centers for Medicare and Medicaid Services (CMS) Hospital Readmissions Reduction Program (HRRP), Fiscal Year 2027 results (discharges July 2023 to June 2025)
 
 *This is an independent portfolio analysis built only on public CMS data. It was not requested or reviewed by Kettering Health. All dollar figures are estimates.*
