@@ -2,8 +2,6 @@
 
 ## D1. Health system scope: Kettering Health (7 CMS facility IDs)
 
-**Date:** 2026-10-26
-
 **Decision:** Kettering Health is analyzed as 7 facilities, matched by CMS Facility ID (CCN).
 
 **Why only 7 when Kettering lists 14-15 locations:** Kettering Health's website lists 15 facilities, but several are marked "a service of" a larger campus. These satellite campuses bill Medicare under the parent hospital's ID, so their readmissions are already included in the parent's numbers. I confirmed none of them appear as separate hospitals in the CMS Hospital General Information file.
@@ -26,8 +24,6 @@
 **Source:** ketteringhealth.org/name/ (checked 2026-10-26); CMS Hospital General Information file.
 
 ## D2. Handling footnotes and missing values
-
-**Date:** 2026-10-26
 
 **Footnote meanings (CMS Hospital Compare footnote definitions):**
 
@@ -55,21 +51,15 @@
 
 ## D3. Hospitals in HRRP but missing from Hospital General Information
 
-**Date:** 2026-10-26
-
 **Finding:** 20 hospitals (all outside Ohio) appear in the FY 2026 HRRP file but not in the current Hospital General Information file. These are likely hospitals that closed, merged, or changed their CMS ID after the 2021-2024 performance period.
 
 **Decision:** Keep them. Their city, county, type, and ownership are left blank. They still count in national comparisons because CMS included them when calculating peer medians. No Ohio or Kettering hospitals are affected.
 
 ## D4. Keep all U.S. hospitals in the clean file
 
-**Date:** 2026-10-26
-
 **Decision:** The clean file keeps all states, not just Ohio. HRRP penalties are based on comparing each hospital to a national peer group, so later steps need national data to calculate benchmarks. Filters for Ohio and Kettering are applied in the analysis, not during cleaning.
 
 ## D5. Use the FY 2027 Supplemental File for the penalty analysis
-
-**Date:** 2026-10-26
 
 **Decision:** The penalty analysis uses the FY 2027 HRRP Supplemental Data File (FY 2027 IPPS/LTCH PPS Final Rule), not the FY 2026 Provider Data Catalog file.
 
@@ -87,8 +77,6 @@
 
 ## D6. Rebuilt the CMS penalty formula and validated it
 
-**Date:** 2026-10-26
-
 **Formula used:**
 payment reduction = min(3%, neutrality modifier x SUM over penalized measures of DRG payment ratio x (ERR - peer group median ERR))
 
@@ -99,8 +87,6 @@ A measure is penalized only when the penalty indicator is "Y" (25+ eligible disc
 **Limitation:** "Share of system total" adds percentage points across hospitals without weighting by each hospital's Medicare payments. A 0.5-point penalty at a large hospital costs more dollars than at a small one. The dollar step (next stage) corrects for this.
 
 ## D7. Penalty dollar estimate method
-
-**Date:** 2026-10-26
 
 **Data:** CMS "Medicare Inpatient Hospitals - by Provider," data year 2024 (file mup_inp_ry26_p04_v10_dy24_prv.csv). Column used: `Tot_Mdcr_Pymt_Amt` (total Medicare payments).
 
